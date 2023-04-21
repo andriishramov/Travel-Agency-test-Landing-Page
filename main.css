@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img {
+    width: 100%;
+    height: 90%;
+}
+.header {
+    display: flex;
+    background-color: white;
+    color: forestgreen;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+h1 span {
+    color: #1b67a8;
+}
+nav {
+    width: 70%;
+    display: flex;
+    justify-content: right;
+}
+ul.header-ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    justify-items: right;
+    margin: 0;
+    align-items: center;
+}
+.start-image {
+    background-image: url("./img/107178919-1673854215895-gettyimages-669463000-shutterstock_621020393.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    color:white;
+    font-size: 50px;
+}
+.start-image span {
+    display: flex;
+    position: relative;
+    top: 100px;
+    width: 90%;
+    font-weight: bold;
+    left: 5%;
+    flex-direction: column;
+}
+.start-image span .start-button {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: none;
+    box-shadow: 0px 0px 10px 1px white;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+.start-image span .start-button:hover {
+    box-shadow: 0px 0px 10px 1px black;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.start-image span .start-button:active {
+    color: black;
+}
+.slider-nav {
+    position: relative;
+    height: 100%;
+}
+.top-hotels {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+.hotels {
+    padding: 20px;
+}
+.hotels:nth-child(odd){
+    background-color: honeydew;
+}
+img {
+    border-radius: 10px;
+}
