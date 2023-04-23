@@ -21,14 +21,29 @@ nav {
     display: flex;
     justify-content: right;
 }
+@media (max-width: 780px) {
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+}
 ul.header-ul {
     width: 60%;
     display: flex;
     justify-content: space-between;
     height: 100%;
-    justify-items: right;
+    justify-items: end;
     margin: 0;
     align-items: center;
+    font-size: 20px;
+}
+ul.header-ul a,
+header h1 a {
+    text-decoration: none;
+    color: green;
+}
+ul.header-ul a:hover {
+    color: #1b67a8;
 }
 .start-image {
     background-image: url("./img/background/107178919-1673854215895-gettyimages-669463000-shutterstock_621020393.jpeg");
@@ -78,7 +93,7 @@ ul.header-ul {
     font-size: 50px;
     margin-bottom: 100px;
 }
-.hotels div h2 {
+.hotels h2 {
     grid-area: header;
     font-size: 30px;
     margin: 0;
@@ -87,21 +102,22 @@ ul.header-ul {
     grid-area: main-left;
     padding-top: 20px;
     height: auto;
+    width: 100%;
 }
  img {
     height: auto;
 }
 .hotels .description {
     grid-area: main-right;
-    font-style: italic;
     font-size: 17px;
+    word-spacing: 10px;
     letter-spacing: 2px;
 }
 /*.hotels .buttons-hotel-info {
     grid-area: footer;
 }*/
 .hotels .showmap {
-    width: 200px;
+    width: 150px;
     height: 50px;
     background-color: orange;
     border: none;
@@ -111,7 +127,7 @@ ul.header-ul {
     font-size: 15px;
 }
 .hotels .getoffer {
-    width: 200px;
+    width: 150px;
     height: 50px;
     background-color: orange;
     border: none;
@@ -140,8 +156,6 @@ ul.header-ul {
     padding: 20px;
     display: grid;
     gap: 20px;
-    /*grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 90%;*/
     grid-template-areas:
                         'header header'
                         'main-left main-right'
@@ -155,10 +169,9 @@ img {
 iframe {
     position: fixed;
     z-index: 3;
-    left: 30%;
-    top: 15vh;
+    top: 10vh;
+    left: 20%;
     box-shadow: 0px 0px 20px 10px white;
-    transition-duration: 1s;
 }
 form {
     position: fixed;
@@ -222,7 +235,7 @@ form {
     background: #fff;
 }
 .form-inner {
-    padding: 40px;
+    padding: 20px;
 }
 .form-inner input,
 .form-inner textarea {
@@ -254,7 +267,7 @@ form button:hover {
 }
 @media (min-width: 568px) {
     form {
-        width: 60%;
+        width: 50%;
     }
 }
 @media (max-width: 1200px) {
@@ -263,7 +276,7 @@ form button:hover {
     }
 
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .hotels {
         display: flex;
         flex-direction: column;
@@ -277,5 +290,89 @@ form button:hover {
 }
 footer {
     text-align: center;
-    padding-top: 200px;
+    margin-top: 200px;
+    border-top: 1px solid black;
+    padding: 10px;
+    margin-bottom: 0;
 }
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.78);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 2;
+}
+form h1 {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+form p {
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+    margin: 0;
+}
+.reviews-container {
+    width: 80%;
+    margin: auto;
+}
+.reviews:nth-child(odd) {
+    background-color: honeydew;
+}
+.reviews {
+    padding: 30px;
+    margin: 30px;
+    box-shadow: 0px 0px 20px 1px lightgray;
+    border-radius: 10px;
+}
+.reviews div {
+    padding-top: 10px;
+}
+.date {
+    font-size: 12px;
+    font-style: italic;
+}
+.name {
+    font-weight: bold;
+}
+.stars-outer {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    color: #ddd;
+}
+
+.stars-inner {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+.stars-inner i {
+    display: inline-block;
+    color: #ffcc00;
+    position: relative;
+
+}
+
+.fa-star {
+    font-size: inherit;
+}
+.fa-star-half{
+    color: #ffcc00;
+}
+h2 .star {
+    color: #ffcc00;
+}
+
+
+

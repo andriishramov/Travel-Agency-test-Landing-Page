@@ -10,13 +10,13 @@
 <body>
 <header>
   <div class="header">
-    <h1>Travel <span>Agency</span></h1>
+    <h1><a href="./index.html">Travel <span>Agency</span></a></h1>
   <nav>
     <ul class="header-ul">
-      <li><a href="#">Main</a></li>
-      <li><a href="#">Hotels</a></li>
-      <li><a href="#">Reviews</a></li>
-      <li><a href="#">Contact</a></li>
+      <a href="./index.html">Main</a>
+      <a href="#hotels-list">Hotels</a>
+      <a href="./index-reviews.html">Reviews</a>
+      <a href="#form" onclick="getOffer(this)">Contact</a>
     </ul>
   </nav>
   </div>
@@ -25,7 +25,7 @@
   <span>See what the BUZZ is all about.
   <br> INTERNATIONAL TRAVEL AGENCY
   <button class="start-button" class="getoffer" onclick="getOffer(this)">GET THE BEST OFFER</button>
-    <form method="post" style="display: none">
+    <form id="form" method="post" style="display: none">
         <div class="form-left-decoration"></div>
         <div class="form-right-decoration"></div>
         <div class="circle"></div>
@@ -36,60 +36,22 @@
           <input type="number" placeholder="Phone">
           <textarea placeholder="Message..." rows="5"></textarea>
           <button type="submit" href="/">GET OFFER</button>
+          <p>Reach us on +48 777 555 888</p>
         </div>
       </form>
+            <div class="overlay"></div>
   </span>
 </div>
-<div class="top-hotels">TOP HOTELS IN WARSAW</div>
+<div id="hotels-list" class="top-hotels">TOP HOTELS IN WARSAW</div>
 <section>
   <div class="hotels">
-      <div> <h2>Hotel Bristol Warszawa ✭✭✭✭✭</h2> </div>
-      <div class="swiffy-slider">
-        <ul class="slider-container" style="height: 100%">
-          <li><img src="./img/bristol/hotel-bristol-night-warsaw-poland-december-iilluminated-historic-luxury-star-collection-capital-city-174271221.jpg" ></li>
-          <li><img src="./img/bristol/cafe-bristol-is-a-legendary.jpg" ></li>
-          <li><img src="./img/bristol/basen.jpg" ></li>
-          <li><img src="./img/bristol/Hotel-Bristol-A-Luxury-Collection-Hotel-Warsaw-Exterior.jpg" ></li>
-        </ul>
-        <button type="button" class="slider-nav"></button>
-        <button type="button" class="slider-nav slider-nav-next"></button>
-        <div class="slider-indicators">
-          <button class="active"></button>
-          <button></button>
-          <button></button>
-          <button></button>
-        </div>
-      </div>
-      <div class="description"> <p>Situated on the celebrated Royal Route, next to the Presidential Palace and just a short stroll from the Old Town, Royal Castle, National Theater and Opera House. Hotel Bristol has served as a city landmark and distinguished destination since 1901. A captivating union of history and modernity, the Art Nouveau masterpiece enchants with exceptional interiors. The iconic Café Bristol, Marconi Restaurant, two bars and the enchanting rooftop offer singular epicurean indulgence while our Bristol spa combines a scenic relaxation area, indoor pool, gym, sauna, and a steam room. This luxury hotel rooms and suites blend classical style and modern finesse. Unrivaled stay experience with outstanding views, timeless decorations and unsurpassed comfort. The Paderewski Suite is an exquisite gem in Bristol’s crown, boasting pure beauty and luxury.</p>
-      <br><div class="buttons-hotel-info">
-        <button class="showmap" onclick="showMap(this)">Show on map</button>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2086.7833944714657!2d21.01330652832984!3d52.24223050364732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc60b493f797%3A0xecb7e48b1cb0dde!2sHotel%20Bristol%2C%20a%20Luxury%20Collection%20Hotel%20%2CWarsaw!5e1!3m2!1spl!2spl!4v1681920041021!5m2!1spl!2spl"
-              width="700" height="500" style="display: none"></iframe>
-      <button class="getoffer" onclick="getOffer(this)">GET OFFER</button>
-      <form method="get" style="display: none">
-        <div class="form-left-decoration"></div>
-        <div class="form-right-decoration"></div>
-        <div class="circle"></div>
-        <div class="form-inner">
-          <h1>Contact us</h1>
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="Email">
-          <input type="number" placeholder="Phone">
-          <textarea placeholder="Message..." rows="5"></textarea>
-          <button type="submit" href="/">GET OFFER</button>
-        </div>
-      </form>
-      </div>
-      </div>
-    </div>
-  <div class="hotels">
-    <div> <h2>Hotel Warszawa ✭✭✭✭✭</h2> </div>
+     <h2>Hotel InterContinental Warszawa <span class="star">✭✭✭✭✭</span></h2>
     <div class="swiffy-slider">
       <ul class="slider-container" style="height: 100%">
-        <li><img src="./img/warszawa/T3S-HotelWarszawa-9905-Galczynski_com.jpg" ></li>
-        <li><img src="./img/warszawa/hotel-warszawa-likus-prudential.jpg" ></li>
-        <li><img src="./img/warszawa/Hotel-Warszawa-pieciogwiazdkowy-hotel-w-centrum-warszawy-(1011)(1).jpg" ></li>
-        <li><img src="./img/warszawa/Hotel-Warszawa-pieciogwiazdkowy-hotel-w-centrum-warszawy--(111)(1).jpg" ></li>
+        <li><img src="./img/intercontinental/PG_190601_009-2.jpg" style="height: auto"></li>
+        <li><img src="./img/intercontinental/274545138.jpg" style="height: auto"></li>
+        <li><img src="./img/intercontinental/Junior-Suite-1.jpg" style="height: auto"></li>
+        <li><img src="./img/intercontinental/RiverView-Wellness-Centre.jpg" style="height: auto"></li>
       </ul>
       <button type="button" class="slider-nav"></button>
       <button type="button" class="slider-nav slider-nav-next"></button>
@@ -100,39 +62,23 @@
         <button></button>
       </div>
     </div>
-    <div class="description"> <p>Hotel Warszawa is a 5-star hotel offering a fitness center, spa and wellness center along with free WIFI. It is situated 700 m from Parade Square and Holy Cross Church. Providing their guests with a 24-hour front desk, this property also has a sun terrace and a restaurant that serves local cuisine.
-      The rooms in Hotel Warszawa come equipped with a desk, a flat-screen TV and a private bathroom. Certain rooms offer a terrace, while all units feature a wardrobe.
-      In this property the guests are served a continental breakfast. They also have an access to a bar.
-      The guests are provided with an access to spa and wellness facilities including a sauna and an indoor pool during their stay at the property. Bike hire and car hire are also available at this accommodation. The area is popular for cycling.</p>
+    <div class="description"> <p>InterContinental Warsaw is one of Warsaw's well-known landmarks. Its city centre location allows quick access to attractions like Warsaw Old Town, a UNESCO World Heritage Site. Voted Poland's Leading Hotel in 2022, it has more than 1340 sqm of superb conference space, including a ballroom and the private 41st-floor Club Lounge. Delight yourself in sophisticated Polish cuisine in our Platter restaurant. Relax in the 43rd-floor pool and enjoy a spectacular view from our stylish rooms.</p>
       <br><div class="buttons-hotel-info">
         <button class="showmap" onclick="showMap(this)">Show on map</button>
-        <iframe src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6644.03264680355!2d21.007389573730425!3d52.23662353683749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccf53459ba21%3A0x56291f0a10d0e42b!2sHotel%20Warszawa!5e0!3m2!1spl!2spl!4v1682168902983!5m2!1spl!2spl"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.606165204032!2d21.000274715796838!3d52.23237267976078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8c15cd2787%3A0x80831c3ac501ad1a!2sInterContinental!5e0!3m2!1spl!2spl!4v1682240017743!5m2!1spl!2spl"
                 width="700" height="500" style="display: none"></iframe>
         <button class="getoffer" onclick="getOffer(this)">GET OFFER</button>
-        <form method="get" style="display: none">
-          <div class="form-left-decoration"></div>
-          <div class="form-right-decoration"></div>
-          <div class="circle"></div>
-          <div class="form-inner">
-            <h1>Contact us</h1>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="number" placeholder="Phone">
-            <textarea placeholder="Message..." rows="5"></textarea>
-            <button type="submit" href="/">GET OFFER</button>
-          </div>
-        </form>
       </div>
     </div>
   </div>
   <div class="hotels">
-    <div> <h2>Hotel Bristol Warszawa ✭✭✭✭✭</h2> </div>
+    <h2>Hotel Bristol Warszawa <span class="star">✭✭✭✭✭</span></h2>
     <div class="swiffy-slider">
       <ul class="slider-container" style="height: 100%">
-        <li><img src="./img/hotel-bristol-night-warsaw-poland-december-iilluminated-historic-luxury-star-collection-capital-city-174271221.jpg" style="height: auto"></li>
-        <li><img src="./img/cafe-bristol-is-a-legendary.jpg" style="height: auto"></li>
-        <li><img src="./img/basen.jpg" style="height: auto"></li>
-        <li><img src="./img/Hotel-Bristol-A-Luxury-Collection-Hotel-Warsaw-Exterior.jpg" style="height: auto"></li>
+        <li><img src="./img/bristol/hotel-bristol-night-warsaw-poland-december-iilluminated-historic-luxury-star-collection-capital-city-174271221.jpg" style="height: auto"></li>
+        <li><img src="./img/bristol/Hotel-Bristol-A-Luxury-Collection-Hotel-Warsaw-Exterior.jpg" style="height: auto"></li>
+        <li><img src="./img/bristol/basen.jpg" style="height: auto"></li>
+        <li><img src="./img/bristol/cafe-bristol-is-a-legendary.jpg" style="height: auto"></li>
       </ul>
       <button type="button" class="slider-nav"></button>
       <button type="button" class="slider-nav slider-nav-next"></button>
@@ -143,36 +89,23 @@
         <button></button>
       </div>
     </div>
-    <div class="description"> <p>Hotel Bristol, Warsaw is a historic five-star luxury hotel built in the Neo-Renaissance style and opened in 1901 in Warsaw, Poland.</p>
+    <div class="description"> <p>Situated on the celebrated Royal Route, next to the Presidential Palace and just a short stroll from the Old Town, Royal Castle, National Theater and Opera House. Hotel Bristol has served as a city landmark and distinguished destination since 1901. A captivating union of history and modernity, the Art Nouveau masterpiece enchants with exceptional interiors. The iconic Café Bristol, Marconi Restaurant, two bars and the enchanting rooftop offer singular epicurean indulgence while our Bristol spa combines a scenic relaxation area, indoor pool, gym, sauna, and a steam room. This luxury hotel rooms and suites blend classical style and modern finesse.</p>
       <br><div class="buttons-hotel-info">
         <button class="showmap" onclick="showMap(this)">Show on map</button>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2086.7833944714657!2d21.01330652832984!3d52.24223050364732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc60b493f797%3A0xecb7e48b1cb0dde!2sHotel%20Bristol%2C%20a%20Luxury%20Collection%20Hotel%20%2CWarsaw!5e1!3m2!1spl!2spl!4v1681920041021!5m2!1spl!2spl"
                 width="700" height="500" style="display: none"></iframe>
         <button class="getoffer" onclick="getOffer(this)">GET OFFER</button>
-        <form method="get" style="display: none">
-          <div class="form-left-decoration"></div>
-          <div class="form-right-decoration"></div>
-          <div class="circle"></div>
-          <div class="form-inner">
-            <h1>Contact us</h1>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="number" placeholder="Phone">
-            <textarea placeholder="Message..." rows="5"></textarea>
-            <button type="submit" href="/">GET OFFER</button>
-          </div>
-        </form>
       </div>
     </div>
   </div>
   <div class="hotels">
-    <div> <h2>Hotel Bristol Warszawa ✭✭✭✭✭</h2> </div>
+    <h2>Hotel Warszawa <span class="star">✭✭✭✭✭</span></h2>
     <div class="swiffy-slider">
       <ul class="slider-container" style="height: 100%">
-        <li><img src="./img/hotel-bristol-night-warsaw-poland-december-iilluminated-historic-luxury-star-collection-capital-city-174271221.jpg" style="height: auto"></li>
-        <li><img src="./img/cafe-bristol-is-a-legendary.jpg" style="height: auto"></li>
-        <li><img src="./img/basen.jpg" style="height: auto"></li>
-        <li><img src="./img/Hotel-Bristol-A-Luxury-Collection-Hotel-Warsaw-Exterior.jpg" style="height: auto"></li>
+        <li><img src="./img/warszawa/hotel-warszawa-likus-prudential.jpg" style="height: auto"></li>
+        <li><img src="./img/warszawa/Hotel-Warszawa-pieciogwiazdkowy-hotel-w-centrum-warszawy--(111)(1).jpg" style="height: auto"></li>
+        <li><img src="./img/warszawa/Hotel-Warszawa-pieciogwiazdkowy-hotel-w-centrum-warszawy-(1011)(1).jpg" style="height: auto"></li>
+        <li><img src="./img/warszawa/T3S-HotelWarszawa-9905-Galczynski_com.jpg" style="height: auto"></li>
       </ul>
       <button type="button" class="slider-nav"></button>
       <button type="button" class="slider-nav slider-nav-next"></button>
@@ -183,25 +116,39 @@
         <button></button>
       </div>
     </div>
-    <div class="description"> <p>Hotel Bristol, Warsaw is a historic five-star luxury hotel built in the Neo-Renaissance style and opened in 1901 in Warsaw, Poland.</p>
+    <div class="description"> <p>Hotel Warszawa is a 5-star hotel offering a fitness center, spa and wellness center. It is situated 700 m from Parade Square and Holy Cross Church. Providing their guests with a 24-hour front desk, this property also has a sun terrace and a restaurant that serves local cuisine. The rooms in Hotel Warszawa come equipped with a desk, a flat-screen TV and a private bathroom. Certain rooms offer a terrace, while all units feature a wardrobe. In this property the guests are served a continental breakfast. They also have an access to a bar. The guests are provided with an access to spa and wellness facilities including a sauna and an indoor pool during their stay at the property.</p>
       <br><div class="buttons-hotel-info">
         <button class="showmap" onclick="showMap(this)">Show on map</button>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2086.7833944714657!2d21.01330652832984!3d52.24223050364732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc60b493f797%3A0xecb7e48b1cb0dde!2sHotel%20Bristol%2C%20a%20Luxury%20Collection%20Hotel%20%2CWarsaw!5e1!3m2!1spl!2spl!4v1681920041021!5m2!1spl!2spl"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.421694529122!2d21.010166702643765!3d52.23572375735614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccf53459ba21%3A0x56291f0a10d0e42b!2sHotel%20Warszawa!5e0!3m2!1spl!2spl!4v1682240595319!5m2!1spl!2spl"
                 width="700" height="500" style="display: none"></iframe>
         <button class="getoffer" onclick="getOffer(this)">GET OFFER</button>
-        <form method="get" style="display: none">
-          <div class="form-left-decoration"></div>
-          <div class="form-right-decoration"></div>
-          <div class="circle"></div>
-          <div class="form-inner">
-            <h1>Contact us</h1>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="number" placeholder="Phone">
-            <textarea placeholder="Message..." rows="5"></textarea>
-            <button type="submit" href="/">GET OFFER</button>
-          </div>
-        </form>
+      </div>
+    </div>
+  </div>
+  <div class="hotels">
+    <h2>Nobu Hotel Warsaw<span class="star">✭✭✭✭✭</span></h2>
+    <div class="swiffy-slider">
+      <ul class="slider-container" style="height: 100%">
+        <li><img src="./img/nobu/113426_r0_1140.jpg" style="height: auto"></li>
+        <li><img src="./img/nobu/architektura_Roca_Nobu_hotel_Laufen_1.jpg" style="height: auto"></li>
+        <li><img src="./img/nobu/DSC00008.jpg" style="height: auto"></li>
+        <li><img src="./img/nobu/image_processing20200803-6202-cdyfzf.jpg" style="height: auto"></li>
+      </ul>
+      <button type="button" class="slider-nav"></button>
+      <button type="button" class="slider-nav slider-nav-next"></button>
+      <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+    </div>
+    <div class="description"> <p>Experience Old World elegance and New World sophistication. Nobu Hotel Warsaw is a luxury hotel that brings together two beautiful experiences in one place – a stunning art-deco, early 20th century historical building and a dazzling new modern wing. As you pass back and forth between these two worlds, transcending through time, you feel the very spirit of the city itself: Warsaw’s dual urge to preserve its history and to redefine itself. Nobu Hotel is a top hotel located right in the heart of the city.</p>
+      <br><div class="buttons-hotel-info">
+        <button class="showmap" onclick="showMap(this)">Show on map</button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.1147500890274!2d21.003288153363393!3d52.22313298616185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecdb344012f29%3A0x250b7cc32b13eac5!2sNobu%20Hotel%20Warsaw!5e0!3m2!1spl!2spl!4v1682240903655!5m2!1spl!2spl"
+                width="700" height="500" style="display: none"></iframe>
+        <button class="getoffer" onclick="getOffer(this)">GET OFFER</button>
       </div>
     </div>
   </div>

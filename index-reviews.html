@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Agency</title>
+  <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+  <div class="header">
+    <h1><a href="./index.html">Travel <span>Agency</span></a></h1>
+    <nav>
+      <ul class="header-ul">
+        <a href="./index.html">Main</a>
+        <a href="./index.html">Hotels</a>
+        <a href="#">Reviews</a>
+        <a href="#form" onclick="getOffer(this)">Contact</a>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="start-image">
+  <span>See what the BUZZ is all about.
+  <br> INTERNATIONAL TRAVEL AGENCY
+  <button class="start-button" class="getoffer" onclick="getOffer(this)">GET THE BEST OFFER</button>
+    <form id="form" method="post" style="display: none">
+        <div class="form-left-decoration"></div>
+        <div class="form-right-decoration"></div>
+        <div class="circle"></div>
+        <div class="form-inner">
+          <h1>Contact us</h1>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <input type="number" placeholder="Phone">
+          <textarea placeholder="Message..." rows="5"></textarea>
+          <button type="submit" href="/">GET OFFER</button>
+          <p>Reach us on +48 777 555 888</p>
+        </div>
+      </form>
+            <div class="overlay"></div>
+  </span>
+</div>
+<div id="hotels-list" class="top-hotels">KNOW THE OPINION OF OUR CUSTOMERS</div>
+<div class="reviews-container"></div>
+<footer>
+  <p>TravelAgency &copy; 2023</p>
+</footer>
+<script src="./script.js"></script>
+
+</body>
+</html>
