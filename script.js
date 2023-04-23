@@ -81,5 +81,18 @@ fetch('data.json')
 
         reviewsContainer.innerHTML = reviews;
     });
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+        }
+    });
+});
+
+document.querySelectorAll('.hotels').forEach(hotel => {
+    observer.observe(hotel);
+});
+
 
 
